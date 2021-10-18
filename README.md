@@ -229,6 +229,17 @@ func adder(args ...int) int {
 }
 ```
 
+### defer
+A defer statement defers the execution of a function until the surrounding function returns.
+defer will be run in last-in-first-out order 
+```go
+func main() {
+	defer fmt.Println("world")
+
+	fmt.Println("hello")
+}
+```
+
 ## Built-in Types
 ```go
 bool
